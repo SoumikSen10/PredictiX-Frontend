@@ -54,7 +54,7 @@ function SignupPage() {
 
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_URL}/api/v1/users/register`,
+        `https://predictix-v2.onrender.com/api/v1/users/register`,
         {
           method: "POST",
           body: JSON.stringify({ fullname, username, email, password }),
