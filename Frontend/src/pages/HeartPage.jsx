@@ -47,7 +47,7 @@ const HeartPage = () => {
 
       try {
         const response = await fetch(
-          `${import.meta.env.VITE_APP_VITE_URL}/api/pdf/heart-scraper`,
+          `${import.meta.env.VITE_URL}/api/pdf/heart-scraper`,
           {
             method: "POST",
             body: formData,
@@ -95,7 +95,7 @@ const HeartPage = () => {
     setLoading(true); // Start loading spinner
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_APP_VITE_URL}/api/v1/predict/heart-pred`,
+        `${import.meta.env.VITE_URL}/api/v1/predict/heart-pred`,
         {
           method: "POST",
           headers: {
