@@ -32,7 +32,7 @@ function LoginPage() {
 
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_APP_VITE_URL}/api/v1/users/login`,
+        `${import.meta.env.VITE_URL}/api/v1/users/login`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
