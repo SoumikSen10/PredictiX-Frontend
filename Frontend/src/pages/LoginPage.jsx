@@ -32,7 +32,7 @@ function LoginPage() {
 
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_URL}/api/v1/users/login`,
+        `https://predictix-v2.onrender.com/api/v1/users/login`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
