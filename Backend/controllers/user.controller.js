@@ -124,7 +124,6 @@ const loginUser = asyncHandler(async (req, res) => {
   const options = {
     httpOnly: true,
     secure: true,
-    domain:"https://predictix-v2.onrender.com",
     path:"/",
   };
 
