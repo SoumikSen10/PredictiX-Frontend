@@ -62,7 +62,7 @@ export const diabetesScraper = (req, res) => {
   const pdfPath = path.join("uploads", req.file.filename);
 
   const pythonProcess = spawn("python", [
-    "src/DataScrapingScripts/scrapDiabetes.py",
+    "../DataScrapingScripts/scrapDiabetes.py",
     pdfPath,
   ]);
 
