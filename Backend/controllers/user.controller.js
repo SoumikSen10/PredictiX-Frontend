@@ -161,6 +161,8 @@ const logoutUser = asyncHandler(async (req, res) => {
   const options = {
     httpOnly: true,
     secure: true,
+    sameSite: "None", // Allows cross-origin cookies
+    path:"/",
   };
 
   return res
@@ -195,9 +197,11 @@ const refreshAccessToken = asyncHandler(async (req, res) => {
     }
 
     const options = {
-      httpOnly: true,
-      secure: true,
-    };
+    httpOnly: true,
+    secure: true,
+    sameSite: "None", // Allows cross-origin cookies
+    path:"/",
+  };
 
     const { accessToken, newRefreshToken } =
       await generateAccessAndRefereshTokens(user._id);
