@@ -27,6 +27,8 @@ function getLocalIpAddress() {
   return "http://localhost/"; // Fallback to localhost if no external IPv4 address is found
 }
 
+app.use(cors({ origin: "https://predicti-x-v2.vercel.app", credentials: true }));
+
 connectDB()
   .then(() => {
     app.on("error", (error) => {
