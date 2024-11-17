@@ -162,7 +162,7 @@ const HeartPage = () => {
     setLoading(true); // Start loading spinner
     try {
       const existingPdfBytes = await fetch(
-        "/src/ReportTemplate/Report.pdf"
+        "/Report.pdf"
       ).then((res) => res.arrayBuffer());
 
       const pdfDoc = await PDFDocument.load(existingPdfBytes);
