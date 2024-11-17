@@ -201,7 +201,7 @@ const BreastPage = () => {
             </select>
           </div>
           <div className="lung-page-upload-image-container">
-            <p>Upload your breast X-ray image for prediction</p>
+            <p>Upload a histological image of breast cancer cells for prediction</p>
             <label htmlFor="upload-image" className="lung-page-upload-label">
               <FiUpload className="lung-page-upload-icon" /> Upload Image
               {imageUploaded && (
