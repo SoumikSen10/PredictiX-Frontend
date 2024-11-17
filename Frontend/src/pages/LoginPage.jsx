@@ -65,6 +65,14 @@ function LoginPage() {
     }
   }
 
+  // Function for Guest Login
+function loginAsGuest() {
+  // Set predefined guest credentials
+  setEmail("guestuser10@gmail.com");
+  setPassword("12345678");
+}
+
+
   return (
     <div className="login-page">
       <ToastContainer
@@ -98,6 +106,10 @@ function LoginPage() {
               Log In
             </button>
           </form>
+          {/* Added Guest Login Button [NEW] */}
+          <button onClick={loginAsGuest} className="guest-login-button">
+            Log in as Guest
+          </button>
           <div className="login-footer">
             <p>
               Don't have an account? <Link to="/signup">Sign up</Link>
