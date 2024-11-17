@@ -102,7 +102,7 @@ const BreastPage = () => {
   const generateDynamicPDF = async () => {
     try {
       const existingPdfBytes = await fetch(
-        "/src/ReportTemplate/Report.pdf"
+        "/Report.pdf"
       ).then((res) => res.arrayBuffer());
 
       const pdfDoc = await PDFDocument.load(existingPdfBytes);
