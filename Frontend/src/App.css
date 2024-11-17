@@ -11,6 +11,23 @@ body {
   font-size: 16px; /* Default root font size */
 }
 
+/* Guest login */
+
+.guest-login-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.guest-login-button:hover {
+  background-color: #5a6268;
+}
+
+
 /* Navbar */
 .navbar {
   display: flex;
