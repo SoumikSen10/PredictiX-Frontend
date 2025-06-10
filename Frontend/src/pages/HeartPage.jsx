@@ -266,7 +266,7 @@ const HeartPage = () => {
               className="heart-page-input"
               type="text"
               name="chestPainType"
-              placeholder="Chest Pain Type (1-Typical Angina, 2-Atypical Angina, 3-Non-anginal Pain,4-Asymptomatic)"
+              placeholder="Chest Pain Type (0-Typical Angina, 1-Atypical Angina, 2-Non-anginal Pain,3-Asymptomatic)"
               value={formData.chestPainType || ""}
               onChange={handleChange}
             />
